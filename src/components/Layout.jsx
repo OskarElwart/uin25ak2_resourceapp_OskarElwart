@@ -1,8 +1,7 @@
 import PageTitle from "./PageTitle"
 import Nav from "./Nav"
 
-
-export default function Layout({ category, setcategory }) {
+export default function Layout({ category, setcategory, children }) {
     return (
         <>        
             <Nav 
@@ -11,6 +10,7 @@ export default function Layout({ category, setcategory }) {
           />
         <div id="content">
             <PageTitle category={category}/>
+            {children}
         </div>
         </>
     );

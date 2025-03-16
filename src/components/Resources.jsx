@@ -1,16 +1,11 @@
-export default function Resources (){
+export default function Resources ({ title, url }){
     return (
+        <article>
+            <li>
         <ul>
-        <li><a href="{source.url}" target="_blank">${source.title}</a></li>`).join('')}</li>
+        <a href={url}>{title}</a>
         </ul>
+        </li>
+        </article>
     );
-    <Resources title ="test" category={category} />
-    {ressurser.map((res) => (
-        <Resource
-            title={res.title}
-            url={res.url}
-            cate={res.category}
-            setCategory={setCategory}
-        />
-    ))}
 }

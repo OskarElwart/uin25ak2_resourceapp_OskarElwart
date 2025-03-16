@@ -1,5 +1,5 @@
-export default function Nav() {
-    <nav>
-</nav>
-
+export default function Nav({ category }) {
+return(
+    <h1>{category}</h1>
+)
 }

@@ -75,3 +75,4 @@ export const resources = [
     category: "headless-cms",
   },
 ];
+

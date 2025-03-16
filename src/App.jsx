@@ -18,7 +18,9 @@ export default function App() {
             category={category} 
             setcategory={setcategory}
           />
-          {resources.map((ressurs, index) => (
+      {resources
+        .filter((ressurs) => ressurs.category === category) 
+        .map((ressurs, index) => (
             <Resources
             key={index} 
             cat={ressurs.category} 

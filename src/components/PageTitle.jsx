@@ -1,6 +1,5 @@
-export default function PageTitle(){
+export default function PageTitle({ currentCat }){
     return (
-        <h1>HTMl</h1>
-
+        <h1>{currentCat}</h1>
     )
 }

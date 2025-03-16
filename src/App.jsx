@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { resources } from "./assets/ressurser.js"
 import Layout from "./components/Layout"
 import Resources from "./components/Resources"
@@ -6,7 +6,12 @@ import Resources from "./components/Resources"
 import './App.css'
 
 export default function App() {
-  const [category, setcategory] = useState("html")
+  const [category, setcategory] = useState("html");
+  useEffect(() => {
+  document.title = `${category}`;
+  }, [category]);
+
+
   return(
         <div className="App">
           <Layout 

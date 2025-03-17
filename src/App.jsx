@@ -3,7 +3,6 @@ import { Routes, Route, useParams, Navigate } from "react-router-dom";
 import { resources } from "./assets/ressurser.js"
 import Layout from "./components/Layout"
 import Resources from "./components/Resources"
-import './App.css'
 
 //Brukte chatGPT for hjelp for å gjøre om min useState("html") og useEffect kode om til. der fikk jeg svar om å sette det til en function kalt CategoryPage. Som jeg valte å bruke.
 function CategoryPage() {

@@ -1,13 +1,15 @@
-export default function Nav({ setcategory }) {
-return(
+import { Link } from "react-router-dom";
+//nav element som endrer route og dermed category
+export default function Nav() {
+  return (
     <nav>
-            <ul>
-                <li><button id="HTMLlink" onClick={() => setcategory("html")}>HTML</button></li>
-                <li><button id="CSSlink" onClick={() => setcategory("css")}>CSS</button></li>
-                <li><button id="JSlink" onClick={() => setcategory("javascript")}>JavaScript</button></li>
-                <li><button id="Reactlink" onClick={() => setcategory("react")}>React</button></li>
-                <li><button id="Sanitylink" onClick={() => setcategory("headless-cms")}>Sanity and headless CMS</button></li>
-            </ul>
-        </nav>
-)
+      <ul>
+        <li><Link to="/html">HTML</Link></li>
+        <li><Link to="/css">CSS</Link></li>
+        <li><Link to="/javascript">JavaScript</Link></li>
+        <li><Link to="/react">React</Link></li>
+        <li><Link to="/headless-cms">Sanity and headless CMS</Link></li>
+      </ul>
+    </nav>
+  );
 }

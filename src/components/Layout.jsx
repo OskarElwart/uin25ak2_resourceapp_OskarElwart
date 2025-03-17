@@ -1,13 +1,13 @@
 import PageTitle from "./PageTitle"
 import Nav from "./Nav"
 
-export default function Layout({ category, setcategory, children }) {
+//sender category prop vidre til PageTitle.jsx og Nav. lister opp {children} for å få opp innholdet
+export default function Layout({ category, children }) {
     return (
-        <>        
-            <Nav 
-            category={category} 
-            setcategory={setcategory}
-          />
+        <>
+        <header>    
+        <Nav category={category}/>
+        </header>
         <div id="content">
             <PageTitle category={category}/>
             {children}

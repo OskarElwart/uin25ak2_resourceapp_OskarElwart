@@ -1,11 +1,12 @@
-export default function Resources ({ title, url }){
+//mapper items i resources etter de er filtrert i app.jsx. Filteren er basert på useParams
+export default function Resources({ resources }) {
     return (
-        <article>
-            <li>
-
-        <a href={url}>{title}</a>
-
-        </li>
-        </article>
+      <ul>
+        {resources.map((ressurs, index) => (
+          <li key={index}>
+            <a href={ressurs.url}>{ressurs.title}</a>
+          </li>
+        ))}
+      </ul>
     );
-}
+  }
